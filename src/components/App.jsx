@@ -13,8 +13,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = event => {
-    const { name } = event.currentTarget;
+  onLeaveFeedback = name => {
     this.setState(prevState => ({
       [name]: prevState[name] + 1,
     }));
